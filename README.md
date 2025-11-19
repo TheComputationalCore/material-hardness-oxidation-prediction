@@ -1,4 +1,4 @@
-# 🔥 Material Hardness & Oxidation Prediction  
+# 🔥 Material Hardness & Oxidation Prediction
 ### Intelligent Microstructure–Property Modeling for Materials Engineering  
 **Author:** Dinesh Chandra  
 **Live Demo:** https://your-deployment-url.com  
@@ -8,65 +8,63 @@
 ---
 
 <div align="center">
-
-![Home](screenshots/demo-01-home.png)
-
+  <img src="screenshots/demo-01-home.png" width="750">
 </div>
 
 ---
 
-## 🚀 Overview  
+## 🚀 Overview
 
 This project delivers a **high-fidelity machine learning system** for predicting:
 
 1. **Material Hardness**  
-2. **Oxidation Rate**  
+2. **Oxidation Rate**
 
-Using advanced data-driven modeling, automated feature validation, SHAP-based interpretability, and a modern browser interface, this system bridges **materials science** with **production-quality machine learning engineering**.
+It integrates advanced ML pipelines, automated input validation, SHAP-based explainability, and a modern browser-based interface — bridging **materials science** with **production-grade ML engineering**.
 
-The application enables metallurgists, welding engineers, and researchers to:
+The system enables researchers and engineers to:
 
-- Predict microstructure-driven properties within seconds  
-- Understand feature influence using explainable AI  
-- Experiment with process conditions digitally  
-- Accelerate materials + process optimization  
+- Predict microstructure-driven material properties within seconds  
+- Understand governing factors via explainable AI  
+- Experiment with digital process variations  
+- Accelerate materials & process optimization  
 
 ---
 
-## 🧪 Scientific Foundation  
+## 🧪 Scientific Foundation
 
-Hardness and oxidation behaviors heavily influence:
+Hardness and oxidation behavior strongly influence:
 
-- Heat treatment outcomes  
-- Failure mechanisms  
-- Wear resistance  
-- High-temperature reliability  
-- Surface engineering performance  
+- Heat treatment performance  
+- Wear and corrosion resistance  
+- Component lifetime  
+- Structural reliability  
+- Surface engineering outcomes  
 
-Experimentation is **time-consuming and resource-heavy**.  
-This ML-based platform provides a scientific surrogate model to accelerate experimentation and decision-making.
+Experiments are **expensive and time-intensive**, motivating the need for **AI surrogate models**.
 
-This work is connected to and inspired by the research:
+This system extends the ideas from:
 
-**“Machine learning–assisted prediction of mechanical properties of EN-8 alloy steel” — Dinesh Chandra, IOP (2020).**  
+**Dinesh Chandra (2020). Machine learning–assisted prediction of mechanical properties of EN-8 alloy steel.**  
+IOP Conference Series: Materials Science and Engineering.  
 https://doi.org/10.1088/1757-899X/998/1/012061
 
 ---
 
-## 🏗 Architecture  
----
+## 🏗 Architecture
+
 material-hardness-oxidation-prediction/
 │
-├── data/ # Datasets with documentation
-├── models/ # Trained ML models + metadata
+├── data/                     # Datasets + documentation
+├── models/                   # Trained ML models + metadata
 ├── src/
-│ ├── app/ # Flask app (UI, routes, templates)
-│ ├── inference/ # Prediction & validation logic
-│ ├── models/ # ML pipelines (training/eval)
-│ └── utils/ # Config + shared utilities
+│   ├── app/                  # Flask app (UI, routes, HTML templates, static files)
+│   ├── inference/            # Prediction + schema validation logic
+│   ├── models/               # ML pipelines (training & evaluation)
+│   └── utils/                # Config & common utilities
 │
-├── screenshots/ # UI visuals
-├── tests/ # pytest suite
+├── screenshots/              # UI and SHAP visualization images
+├── tests/                    # pytest suite
 ├── requirements.txt
 ├── render.yaml
 ├── Procfile
@@ -74,32 +72,32 @@ material-hardness-oxidation-prediction/
 
 ---
 
-## 🌐 UI Preview  
+## 🌐 UI Preview
 
 ### **Home Interface**
 <div align="center">
-<img src="screenshots/demo-01-home.png" width="750">
+  <img src="screenshots/demo-01-home.png" width="750">
 </div>
 
 ---
 
 ### **Prediction Workflow**
 <div align="center">
-<img src="screenshots/demo-02-predict.png" width="750">
+  <img src="screenshots/demo-02-predict.png" width="750">
 </div>
 
 ---
 
 ### **Hardness Explainability (SHAP)**
 <div align="center">
-<img src="screenshots/demo-03-hardness-shap.png" width="750">
+  <img src="screenshots/demo-03-hardness-shap.png" width="750">
 </div>
 
 ---
 
 ### **Oxidation Explainability (SHAP)**
 <div align="center">
-<img src="screenshots/demo-04-oxidation-shap.png" width="750">
+  <img src="screenscreenshots/demo-04-oxidation-shap.png" width="750">
 </div>
 
 ---
@@ -110,16 +108,12 @@ material-hardness-oxidation-prediction/
 <summary><strong>Click to expand EDA visualizations</strong></summary>
 
 ### Hardness Dataset
-<div align="center">
 <img src="src/app/static/plots/eda_hardness_correlation.png" width="420">
 <img src="src/app/static/plots/eda_hardness_hist.png" width="420">
-</div>
 
 ### Oxidation Dataset
-<div align="center">
 <img src="src/app/static/plots/eda_oxidation_correlation.png" width="420">
 <img src="src/app/static/plots/eda_oxidation_hist.png" width="420">
-</div>
 
 </details>
 
@@ -131,110 +125,97 @@ material-hardness-oxidation-prediction/
 <summary><strong>Click to expand performance plots</strong></summary>
 
 ### Hardness Model
-
-<div align="center">
 <img src="src/app/static/plots/perf_hardness_actual_vs_pred.png" width="420">
 <img src="src/app/static/plots/perf_hardness_residuals.png" width="420">
 <img src="src/app/static/plots/fi_hardness_coefficients.png" width="420">
-</div>
 
 ### Oxidation Model
-
-<div align="center">
 <img src="src/app/static/plots/perf_oxidation_actual_vs_pred.png" width="420">
 <img src="src/app/static/plots/perf_oxidation_residuals.png" width="420">
 <img src="src/app/static/plots/fi_oxidation_importances.png" width="420">
-</div>
 
 </details>
 
 ---
 
-## 🧠 Machine Learning Pipelines  
+## 🧠 Machine Learning Pipelines
 
-Each model includes:
+Each model provides:
 
 - Data validation  
 - Preprocessing & feature engineering  
-- Scikit-learn pipelines  
+- Scikit-learn regression pipelines  
 - Hyperparameter tuning  
-- SHAP attribution  
+- SHAP-based explainability  
 - Metadata for reproducibility  
 
-Training scripts:
+### Training Scripts
+src/models/train_hardness.py  
+src/models/train_oxidation.py
 
--src/models/train_hardness.py
--src/models/train_oxidation.py
-
-
-Evaluation:
-
+### Evaluation
+src/models/evaluate.py
 
 ---
 
 ## 🛠 Setup (Local Development)
 
-### **1. Clone repo**
+### **1. Clone the repository**
+git clone https://github.com/TheComputationalCore/Material-Hardness-Oxidation-Prediction
+cd Material-Hardness-Oxidation-Prediction
 
-           ```bash
-              git clone https://github.com/TheComputationalCore/Material-Hardness-Oxidation-Prediction
-              cd Material-Hardness-Oxidation-Prediction
-           ```
+### **2. Create environment**
+conda create -n mhoc python=3.10
+conda activate mhoc
+pip install -r requirements.txt
 
-  2. Environment
+### **3. Run application**
+python src/app/app.py
 
-             conda create -n mhoc python=3.10
-             conda activate mhoc
-             pip install -r requirements.txt
-   
-  3. Run
+Open in browser:  
+http://localhost:5000
 
-     python src/app/app.py
+---
 
-     Open in browser:
-                       http://localhost:5000
+## 🧪 Testing
+pytest -q
 
-🧪 Testing
+---
 
-    pytest -q
-    
-   Tests cover:
+## 🚀 Deployment (Render)
 
-    API routes
+### **Build Command**
+pip install -r requirements.txt
 
-    Prediction logic
+### **Start Command**
+gunicorn "app.app:app" --chdir src --bind 0.0.0.0:$PORT --workers 2
 
-    Input schema
+---
 
-    Edge-case handling
+## 📘 Documentation
 
+- MODEL_CARD.md  
+- ARCHITECTURE.md  
+- API_REFERENCE.md  
 
-🚀 Deployment on Render
-       Build Command
-                   pip install -r requirements.txt
-       Start Command
-                   gunicorn "app.app:app" --chdir src --bind 0.0.0.0:$PORT --workers 2
+---
 
-  📘 Documentation
+## 📄 Citation
 
-        Located in /docs:
+Dinesh Chandra (2020),  
+Machine learning–assisted prediction of mechanical properties of EN-8 alloy steel,  
+IOP Conference Series: Materials Science and Engineering, 998 (1), 012061.  
+https://doi.org/10.1088/1757-899X/998/1/012061
 
-        MODEL_CARD.md — model specs, ethics, limitations
+---
 
-        ARCHITECTURE.md — diagrams
+## ⭐ Author
 
-    📄 Citation
+**Dinesh Chandra**  
+Machine Learning Engineer & Materials Science Researcher
 
-     Dinesh Chandra (2020),
-     Prediction of mechanical properties of EN-8 alloy steel,
-     IOP Conference Series: Materials Science and Engineering, 998 (1), 012061.
-     Paper: https://doi.org/10.1088/1757-899X/998/1/012061
+---
 
-     ⭐ Author
+## 📦 License
 
-     Dinesh Chandra
-     Machine Learning Engineer & Materials Science Researcher
-
-     📦 License
-
-     MIT License — open for academic and professional use.
+MIT License — open for academic and professional use.
