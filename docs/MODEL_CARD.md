@@ -1,9 +1,3 @@
-
----
-
-## `docs/MODEL_CARD.md`
-
-```md
 # Model Card — Material Hardness & Oxidation Prediction
 
 ## Model Details
@@ -44,5 +38,5 @@
 - Use the same Python environment from `requirements.txt` for reproducibility.
 
 ## Contact
-- Project author: (add your name & contact)
-- Repository: (add GitHub link)
+- Project author: Dinesh Chandra
+- Repository: https://github.com/TheComputationalCore/Material-Hardness-Oxidation-Prediction
