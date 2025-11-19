@@ -1,0 +1,17 @@
+{
+    "model_name": "Oxidation Model",
+    "trained_on": "2025-11-19 01:21:08",
+    "features": [
+        "Material",
+        "Current",
+        "Heat_Input",
+        "Soaking_Time",
+        "Carbon",
+        "Manganese"
+    ],
+    "metrics": {
+        "MAE": 7.856916666666677e-05,
+        "RMSE": 0.0001005163870761059,
+        "R2": 0.9978454312784749
+    }
+}

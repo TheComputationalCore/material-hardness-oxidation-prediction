@@ -1,0 +1,16 @@
+{
+    "model_name": "Hardness Model",
+    "trained_on": "2025-11-19 01:20:53",
+    "features": [
+        "Material",
+        "Current",
+        "Heat_Input",
+        "Carbon",
+        "Manganese"
+    ],
+    "metrics": {
+        "MAE": 1.6053370786517291,
+        "RMSE": 1.7866646754377074,
+        "R2": 0.9837030215062824
+    }
+}
