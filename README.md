@@ -235,10 +235,12 @@ Paper: https://doi.org/10.1088/1757-899X/998/1/012061
 
 ---
 
-## ⭐ Author
+## 👤 Author
 
-**Dinesh Chandra**  
-Machine Learning Engineer & Materials Science Researcher
+**Dinesh Chandra — TheComputationalCore**
+
+- GitHub: https://github.com/TheComputationalCore  
+- YouTube: https://www.youtube.com/@TheComputationalCore  
 
 ---
 
