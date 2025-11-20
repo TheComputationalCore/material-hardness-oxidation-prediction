@@ -5,6 +5,8 @@ services:
     plan: starter
     region: oregon
 
+    runtime: python-3.10.13   # ← REQUIRED OR RENDER USES PYTHON 3.13!!!
+
     buildCommand: |
       pip install --upgrade pip
       pip install -r requirements.txt
