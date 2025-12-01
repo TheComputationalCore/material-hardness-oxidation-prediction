@@ -39,29 +39,29 @@ This work provides empirical validation for heat input, microstructure, hardness
 
 ```
                    ┌───────────────────────────┐
-                   │     Web UI (Flask)         │
-                   │  HTML • CSS • JS • Charts  │
+                   │     Web UI (Flask)        │
+                   │  HTML • CSS • JS • Charts │
                    └───────────────┬───────────┘
                                    │
                          User Input Validation
                                    │
                    ┌───────────────▼──────────────┐
-                   │   Inference Engine (Python)   │
-                   │  Pydantic • Feature Builder   │
+                   │   Inference Engine (Python)  │
+                   │  Pydantic • Feature Builder  │
                    └───────────────┬──────────────┘
                                    │
          ┌─────────────────────────┼──────────────────────────┐
          ▼                         ▼                          ▼
 ┌────────────────┐      ┌──────────────────┐       ┌──────────────────────┐
-│ Hardness Model │      │ Oxidation Model │       │   Metadata System     │
-│ LinearReg / RF │      │ Random Forest   │       │ Versioning • Hashing  │
-└───────┬────────┘      └──────────┬──────┘       └──────────┬───────────┘
+│ Hardness Model │      │ Oxidation Model  │       │   Metadata System    │
+│ LinearReg / RF │      │ Random Forest    │       │ Versioning • Hashing │
+└───────┬────────┘      └──────────┬──────-┘       └──────────┬───────────┘
         │                           │                        │
         └────────────┬──────────────┴──────────────┬─────────┘
                      ▼                             ▼
-         ┌───────────────────┐          ┌────────────────────────┐
-         │ SHAP Explainability│          │ Performance Diagnostics │
-         │ Global + Local     │          │ Residuals • R² • MAE    │
+         ┌──────────────────-─┐          ┌────────────────────────┐
+         │ SHAP Explainability│          │ Performance Diagnostics│
+         │ Global + Local     │          │ Residuals • R² • MAE   │
          └───────────┬────────┘          └───────────┬────────────┘
                      ▼                             ▼
                    JSON                        UI Charts
