@@ -1,6 +1,7 @@
 <p align="center">
   <img src="assets/banner.png" alt="Material Hardness & Oxidation Prediction Banner">
 </p>
+
 # 🌌 Material Hardness & Oxidation Prediction  
 ### **AI-Driven Microstructure–Property Intelligence Platform for Materials Engineering**
 
